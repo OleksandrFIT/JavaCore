@@ -1,14 +1,11 @@
 package JC_hm2;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Task2 {
     public static void main(String[] args) {
 
-        List<Integer> nums = Arrays.asList();
+        List<Integer> nums = new ArrayList<>();
         System.out.println("Заповніть масив ");
         Scanner scArray= new Scanner(System.in);
 
