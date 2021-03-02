@@ -22,7 +22,6 @@ public class Task1 {
             for (int i = 1; i <= k; i++) {
                 double res1 = money / 100 * n; // num of deposite
                 money = money + res1;
-                System.out.println(money);
             }
         }
 
