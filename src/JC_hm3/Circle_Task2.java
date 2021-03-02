@@ -7,9 +7,9 @@ public class Circle_Task2 {
     private double r;
     private double d;
 
-    public Circle_Task2(double r, double d){
-        this.r = r;
-        this.d = d;
+    public Circle_Task2(){
+        this.r = 4.82;
+        this.d = 9.64;
     }
     // sq- d
     //c r
