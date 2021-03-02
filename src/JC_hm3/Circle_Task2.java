@@ -15,12 +15,14 @@ public class Circle_Task2 {
     //c r
 
     public double square(){
-        return Math.PI * Math.pow(d/2, 2);
+        System.out.println("Площа кола = "+ Math.PI * Math.pow(d/2, 2));
+        return 0;
         //JOptionPane.showMessageDialog("Square = "+ Math.PI * Math.pow(d/2, 2));
     }
 
     public double length(){
-        return 2* Math.PI * r;
+        System.out.println("Довжина кола = "+ 2* Math.PI * r);
+        return 0;
     }
 
 }
