@@ -9,5 +9,6 @@ public class ApplicationTask2 {
         System.out.println("Площа кола = "+ circle.square());
         System.out.println("Довжина кола = "+ circle.length());
 
+
     }
 }
