@@ -17,7 +17,6 @@ public class Circle_Task2 {
     public double square(){
         System.out.println("Площа кола = "+ Math.PI * Math.pow(d/2, 2));
         return 0;
-        //JOptionPane.showMessageDialog("Square = "+ Math.PI * Math.pow(d/2, 2));
     }
 
     public double length(){
