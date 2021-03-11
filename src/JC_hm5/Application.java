@@ -18,7 +18,7 @@ public class Application {
         System.out.println(warrior3.Warrior3Round1() + "\n" + warrior1.HpRound2());
         System.out.println(warrior2.Warrior2Round2() + "\n" + warrior3.HpRound2());
         System.out.println(warrior2.Warrior2Round3() + "\n" + warrior1.HpRound3());
-        System.out.println(warrior.EndOfWar());
+        System.out.println(warrior.EndOfWar()); //victory
 
 
     }
