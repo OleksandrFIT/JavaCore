@@ -9,7 +9,13 @@ import java.util.regex.Pattern;
 
 public class App {
     public static void main(String[] args) {
+      //  first();
 
+      //  second();
+
+    }
+
+    public static void first(){
         System.out.println("Введіть будь-які слова: ");
 
         Scanner sc_w= new Scanner(System.in);
@@ -18,13 +24,36 @@ public class App {
 
         while (!words.equals("stop")){
 
-            Pattern regex = Pattern.compile("[^a]");
+            Pattern regex = Pattern.compile("^a");
             Matcher matcher = regex.matcher(words);
-            list.add();
+            if (matcher.find()){
+                list.add(words);
+            }
+
             words = sc_w.next().toLowerCase();
         }
         System.out.println(list);
-
-
     }
+
+    public static void second(){
+        System.out.println("Введіть будь-які слова: ");
+
+        Scanner sc_w= new Scanner(System.in);
+        String email = sc_w.next().toLowerCase();
+        List<String> list = new LinkedList<>();
+
+        while (!email.equals("stop")){
+
+            Pattern regex = Pattern.compile("@gmail.com$");
+            Matcher matcher = regex.matcher(email);
+            if (matcher.find()){
+                list.add(email);
+            }
+
+            email = sc_w.next().toLowerCase();
+        }
+        System.out.println(list);
+    }
+
+
 }
