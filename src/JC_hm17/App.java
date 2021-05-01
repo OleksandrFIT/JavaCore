@@ -166,32 +166,30 @@ public class App {
 
 
             case 4: {
-                ComparatorName comparatorName = new ComparatorName();
-                Collections.sort(thing, comparatorName);
+                AnonymousName anonymousName = new AnonymousName() {
+                };
+                Collections.sort(thing, anonymousName);
                 System.out.println(thing);
             } break;
 
             case 5: {
-                ComparatorLength comparatorLength = new ComparatorLength();
-                Collections.sort(thing, comparatorLength);
+                AnonymousWeight anonymousWeight = new AnonymousWeight() {
+                };
+                Collections.sort(thing, anonymousWeight);
                 System.out.println(thing);
             } break;
 
             case 6: {
                 AnonymousLength anonymousLength = new AnonymousLength() {
-                    @Override
-                    public int compare(Commodity o1, Commodity o2) {
-                        return 0;
-                    }
                 };
-                ComparatorWidth comparatorWidth = new ComparatorWidth();
-                Collections.sort(thing, comparatorWidth);
+                Collections.sort(thing, anonymousLength);
                 System.out.println(thing);
             } break;
 
             case  7: {
-                ComparatorWeight comparatorWeight = new ComparatorWeight();
-                Collections.sort(thing, comparatorWeight);
+                AnonymousWidth anonymousWidth = new AnonymousWidth() {
+                };
+                Collections.sort(thing, anonymousWidth);
                 System.out.println(thing);
             }break;
 
